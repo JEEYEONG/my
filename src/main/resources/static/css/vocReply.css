@@ -1,16 +1,3 @@
-@font-face {
-    font-family: Pretendard-Regular;
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-}
-
-
-
-.fieldError {
-	color: #bd2130;
-}
-
 /*--------- default setting ---------*/
 * {
 	margin: 0;
@@ -20,7 +7,7 @@
 }
 
 body {
-	font-family: Pretendard-Regular;
+	font-family: 'Noto Sans KR', sans-serif;
 	font-size: 1rem;
 	line-height: 1.5rem;
 	color: black;
@@ -35,7 +22,6 @@ h4 {
 	line-height: 2rem;
 	text-align: center;
 }
-
 
 button {
 	display: inline-block;
@@ -62,34 +48,26 @@ li {
 	list-style: none;
 }
 
-/*--------- common class setting ---------*/
+.fieldError {
+	color: #bd2130;
+}
 
-.vocForm {
-	
-	margin: 220px;
+.vocReply {
+	margin: 200px;
 	border-radius: 10px;
 	border: 1px solid #999;
 	padding: 50px 5%;
 }
 
-.vocForm-container {
-	
+.vocReply-container {
 	padding-top: 30px;
 }
 
-.vocForm-txt {
-	
+.vocReply-txt {
 	padding-top: 20px;
 }
 
-
-img {
-	width: 100%;
-	vertical-align: top;
-}
-
 input, select {
-	font-family: Pretendard-Regular;
 	height: 40px;
 	font-size: 1rem;
 	padding-left: 7px;
@@ -106,40 +84,15 @@ textarea {
 	padding: 10px 0 0 7px;
 	resize: none;
 	font-size: 1rem;
-	font-family: 'Pretendard-Regular';
+	font-family: 'Noto Sans KR', sans-serif;
 }
 
-/* input[type=checkbox] {
-	height: auto;
-	transform: scale(1.5);
-	margin: 0 10px;
-	vertical-align: middle;
-} */
-
-/*--------- Board ---------*/
-/* 아래로 대체
-.txt input[name=title] {
-  width:100%;
-  margin-bottom: 20px;
-  border: 0;
-  border-bottom: 1px solid #bbb;
-}
-*/
-
-/* .filebox label {
-    display: inline-block;
-    padding: 10px 20px;
-    vertical-align: middle;
-    cursor: pointer;
-    height: 40px;
-    margin-left: 10px;
-} */
 .file{
 	padding-left: 10px;
 	padding-top: 20px; 
 }
 
-.vocForm-filebox input[type="file"] {
+.vocReply-filebox input[type="file"] {
 	position: absolute;
 	width: 0;
 	height: 0;
@@ -148,7 +101,7 @@ textarea {
 	border: 0;
 }
 
-.vocForm-name-input {
+.vocReply-name-input {
 	width: 100%;
 	margin-bottom: 20px;
 	border: 0;
@@ -156,13 +109,11 @@ textarea {
 }
 
 .btn-upload {
-	float: left;
 	display: inline-block;
 	vertical-align: middle;
 	text-align: center;
 	margin: 10px 10px;
-	padding-top: 5px;
-	width : 40px;
+	padding-top: 5px; width : 40px;
 	height: 40px;
 	background: #eee;
 	color: #aaa;
@@ -179,12 +130,6 @@ textarea {
 	width: 40px;
 }
 
-
-
-/* .custom-file-input {
-	display: none;
-} */
-
 .custom-file-label {
 	vertical-align: middle;
 	width: 94%;
@@ -192,15 +137,6 @@ textarea {
 	border-radius: 5px;
 }
 
-/* .btn {
-  display: flex;
-  justify-content: space-between;
-} */
-
-/* .file{
-	float: left;
-	
-} */
 .btn-submit {
 	width : 150px;
 	border: 0;

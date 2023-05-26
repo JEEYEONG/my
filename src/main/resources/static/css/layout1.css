@@ -29,7 +29,7 @@ html {
    margin-bottom: 100px;
 }
 
-.content div {
+.content > div {
    margin: 0 auto;
    padding: 0 auto;
 }

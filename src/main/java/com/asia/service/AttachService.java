@@ -21,8 +21,8 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class AttachService {
 
-	@Value("${itemImgLocation}") // properties에 등록한 값 불러와
-	private String itemImgLocation; // 변수 itemImgLocation에 넣어
+	@Value("${attachImgLocation}") // properties에 등록한 값 불러와
+	private String attachImgLocation; // 변수 itemImgLocation에 넣어
 
 	private final AttachRepository attachRepository;
 	private final FileService fileService;
@@ -34,7 +34,7 @@ public class AttachService {
 
 		// 파일업로드
 		if (!StringUtils.isEmpty(oriname)) {
-			name = fileService.uploadFile(itemImgLocation, oriname, attachFile.getBytes()); // 사용자가 이미지를 등록했다면 저장할 경로,
+			name = fileService.uploadFile(attachImgLocation, oriname, attachFile.getBytes()); // 사용자가 이미지를 등록했다면 저장할 경로,
 																							// 파일이름, 파일바이트수를 파라미터로 하는
 																							// uploadFile 메서드 호출
 			url = "/images/attach/" + name; // 저장한 이미지를 불러올 경로 설정 ?? C:/shop/images/item/
@@ -54,11 +54,11 @@ public class AttachService {
 
 			// 기존 이미지 파일 삭제
 			if (!StringUtils.isEmpty(savedAttach.getName())) { // 기존에 등록된 글 이미지 파일이 있을 경우 해당 파일 삭제
-				fileService.deleteFile(itemImgLocation + "/" + savedAttach.getName());
+				fileService.deleteFile(attachImgLocation + "/" + savedAttach.getName());
 			}
 
 			String oriname = attachFile.getOriginalFilename(); // 업데이트한 이미지파일 업로드
-			String name = fileService.uploadFile(itemImgLocation, oriname, attachFile.getBytes());
+			String name = fileService.uploadFile(attachImgLocation, oriname, attachFile.getBytes());
 			String url = "/images/attach/" + name;
 			savedAttach.updateImg(oriname, name, url);
 		}
@@ -76,7 +76,7 @@ public class AttachService {
 
 			String attach = attachLists.get(i).getName();
 
-			fileService.deleteFile(itemImgLocation + "/" + attach);
+			fileService.deleteFile(attachImgLocation + "/" + attach);
 		}
 
 	}

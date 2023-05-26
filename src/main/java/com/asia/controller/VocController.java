@@ -167,9 +167,9 @@ public class VocController {
 	@GetMapping(value = {"/manage", "/manage/{page}"})
 	public String vocManage(BoardSearchDto boardSearchDto ,@PathVariable ("page") Optional<Integer> page, Model model) {
 		Pageable pageable = PageRequest.of(page.isPresent() ? page.get():0,10);
-		Page<Voc> items = vocService.getBoardPage(boardSearchDto, pageable);
+		Page<Voc> checks = vocService.getBoardPage(boardSearchDto, pageable);
 		
-		model.addAttribute("items",items);
+		model.addAttribute("checks",checks);
 		model.addAttribute("boardSearchDto", boardSearchDto);
 		model.addAttribute("maxPage", 5);
 		

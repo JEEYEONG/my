@@ -292,3 +292,939 @@
 				HikariPool-3 - Shutdown initiated...
 [2023-05-26 10:08:50.269] [INFO ] [RMI TCP Connection(73)-127.0.0.1] com.zaxxer.hikari.HikariDataSource
 				HikariPool-3 - Shutdown completed.
+[2023-05-26 10:38:14.078] [INFO ] [restartedMain] com.asia.AsiaApplication
+				Starting AsiaApplication using Java 11.0.17 on DESKTOP-0GU3E42 with PID 5720 (C:\boot\asia\target\classes started by BIG603-12 in C:\boot\asia)
+[2023-05-26 10:38:14.079] [INFO ] [restartedMain] com.asia.AsiaApplication
+				No active profile set, falling back to 1 default profile: "default"
+[2023-05-26 10:38:14.079] [INFO ] [background-preinit] org.hibernate.validator.internal.util.Version
+				HV000001: Hibernate Validator 6.2.5.Final
+[2023-05-26 10:38:14.341] [INFO ] [restartedMain] org.springframework.boot.devtools.restart.ChangeableUrls
+				The Class-Path manifest attribute in C:\Users\BIG603-12\.m2\repository\com\oracle\database\jdbc\ojdbc8\21.5.0.0\ojdbc8-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/BIG603-12/.m2/repository/com/oracle/database/jdbc/ojdbc8/21.5.0.0/oraclepki.jar
+[2023-05-26 10:38:14.342] [INFO ] [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor
+				Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2023-05-26 10:38:14.342] [INFO ] [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor
+				For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2023-05-26 10:38:14.984] [INFO ] [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate
+				Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-05-26 10:38:15.054] [INFO ] [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate
+				Finished Spring Data repository scanning in 63 ms. Found 4 JPA repository interfaces.
+[2023-05-26 10:38:15.693] [INFO ] [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer
+				Tomcat initialized with port(s): 8090 (http)
+[2023-05-26 10:38:15.704] [INFO ] [restartedMain] org.apache.coyote.http11.Http11NioProtocol
+				Initializing ProtocolHandler ["http-nio-8090"]
+[2023-05-26 10:38:15.704] [INFO ] [restartedMain] org.apache.catalina.core.StandardService
+				Starting service [Tomcat]
+[2023-05-26 10:38:15.704] [INFO ] [restartedMain] org.apache.catalina.core.StandardEngine
+				Starting Servlet engine: [Apache Tomcat/9.0.74]
+[2023-05-26 10:38:15.797] [INFO ] [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]
+				Initializing Spring embedded WebApplicationContext
+[2023-05-26 10:38:15.797] [INFO ] [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext
+				Root WebApplicationContext: initialization completed in 1455 ms
+[2023-05-26 10:38:15.852] [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource
+				HikariPool-1 - Starting...
+[2023-05-26 10:38:15.860] [WARN ] [restartedMain] com.zaxxer.hikari.util.DriverDataSource
+				Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+[2023-05-26 10:38:16.067] [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource
+				HikariPool-1 - Start completed.
+[2023-05-26 10:38:16.076] [INFO ] [restartedMain] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration
+				H2 console available at '/h2-console'. Database available at 'jdbc:oracle:thin:@localhost:1521:xe'
+[2023-05-26 10:38:16.209] [INFO ] [restartedMain] org.hibernate.jpa.internal.util.LogHelper
+				HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-05-26 10:38:16.284] [INFO ] [restartedMain] org.hibernate.Version
+				HHH000412: Hibernate ORM core version 5.6.15.Final
+[2023-05-26 10:38:16.455] [INFO ] [restartedMain] org.hibernate.annotations.common.Version
+				HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2023-05-26 10:38:16.583] [INFO ] [restartedMain] org.hibernate.dialect.Dialect
+				HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+[2023-05-26 10:38:16.858] [WARN ] [restartedMain] org.hibernate.orm.deprecation
+				HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+[2023-05-26 10:38:16.859] [WARN ] [restartedMain] org.hibernate.orm.deprecation
+				HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+[2023-05-26 10:38:16.860] [WARN ] [restartedMain] org.hibernate.orm.deprecation
+				HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+[2023-05-26 10:38:16.860] [WARN ] [restartedMain] org.hibernate.orm.deprecation
+				HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+[2023-05-26 10:38:17.430] [INFO ] [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator
+				HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-05-26 10:38:17.439] [INFO ] [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean
+				Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-05-26 10:38:17.480] [WARN ] [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration
+				spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-05-26 10:38:18.382] [WARN ] [restartedMain] org.springframework.security.config.annotation.web.builders.WebSecurity
+				You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2023-05-26 10:38:18.382] [INFO ] [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain
+				Will not secure Ant [pattern='/css/**']
+[2023-05-26 10:38:18.383] [WARN ] [restartedMain] org.springframework.security.config.annotation.web.builders.WebSecurity
+				You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2023-05-26 10:38:18.383] [INFO ] [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain
+				Will not secure Ant [pattern='/js/**']
+[2023-05-26 10:38:18.383] [WARN ] [restartedMain] org.springframework.security.config.annotation.web.builders.WebSecurity
+				You are asking Spring Security to ignore Ant [pattern='/img/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2023-05-26 10:38:18.383] [INFO ] [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain
+				Will not secure Ant [pattern='/img/**']
+[2023-05-26 10:38:18.423] [INFO ] [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain
+				Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2ad6e9e2, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6de0efc4, org.springframework.security.web.context.SecurityContextPersistenceFilter@75ca06ed, org.springframework.security.web.header.HeaderWriterFilter@210276d, org.springframework.security.web.csrf.CsrfFilter@2bcc38ae, org.springframework.security.web.authentication.logout.LogoutFilter@2ff874cc, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@777e3bf5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4d4c7639, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6467268, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3a18c21f, org.springframework.security.web.session.SessionManagementFilter@4aa0725a, org.springframework.security.web.access.ExceptionTranslationFilter@1b08f2bf, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1930e3e1]
+[2023-05-26 10:38:18.761] [INFO ] [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer
+				LiveReload server is running on port 35729
+[2023-05-26 10:38:18.777] [INFO ] [restartedMain] org.apache.coyote.http11.Http11NioProtocol
+				Starting ProtocolHandler ["http-nio-8090"]
+[2023-05-26 10:38:18.795] [INFO ] [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer
+				Tomcat started on port(s): 8090 (http) with context path ''
+[2023-05-26 10:38:18.806] [INFO ] [restartedMain] com.asia.AsiaApplication
+				Started AsiaApplication in 5.133 seconds (JVM running for 6.067)
+[2023-05-26 10:39:07.546] [INFO ] [http-nio-8090-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]
+				Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-05-26 10:39:07.547] [INFO ] [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet
+				Initializing Servlet 'dispatcherServlet'
+[2023-05-26 10:39:07.548] [INFO ] [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet
+				Completed initialization in 1 ms
+[2023-05-26 10:39:08.456] [WARN ] [http-nio-8090-exec-1] nz.net.ultraq.thymeleaf.layoutdialect.fragments.FragmentProcessor
+				You don't need to put the layout:fragment/data-layout-fragment attribute into the <head> section - the decoration process will automatically copy the <head> section of your content templates into your layout page.
+[2023-05-26 13:27:47.332] [WARN ] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool
+				HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m59s33ms26µs).
+[2023-05-26 15:47:45.281] [WARN ] [http-nio-8090-exec-1] org.hibernate.engine.jdbc.spi.SqlExceptionHelper
+				SQL Error: 12899, SQLState: 72000
+[2023-05-26 15:47:45.284] [ERROR] [http-nio-8090-exec-1] org.hibernate.engine.jdbc.spi.SqlExceptionHelper
+				ORA-12899: value too large for column "ASIA"."VOC"."CONTENT" (actual: 975, maximum: 255)
+
+[2023-05-26 15:47:45.288] [INFO ] [http-nio-8090-exec-1] org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl
+				HHH000010: On release of batch it still contained JDBC statements
+[2023-05-26 15:48:05.836] [WARN ] [http-nio-8090-exec-9] org.hibernate.engine.jdbc.spi.SqlExceptionHelper
+				SQL Error: 12899, SQLState: 72000
+[2023-05-26 15:48:05.836] [ERROR] [http-nio-8090-exec-9] org.hibernate.engine.jdbc.spi.SqlExceptionHelper
+				ORA-12899: value too large for column "ASIA"."VOC"."CONTENT" (actual: 407, maximum: 255)
+
+[2023-05-26 15:48:05.836] [INFO ] [http-nio-8090-exec-9] org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl
+				HHH000010: On release of batch it still contained JDBC statements
+[2023-05-26 15:49:24.570] [INFO ] [http-nio-8090-exec-2] com.asia.service.FileService
+				파일을 삭제했습니다.
+[2023-05-26 15:49:24.571] [INFO ] [http-nio-8090-exec-2] com.asia.service.FileService
+				파일이 존재하지 않습니다.
+[2023-05-26 15:49:24.571] [INFO ] [http-nio-8090-exec-2] com.asia.service.FileService
+				파일이 존재하지 않습니다.
+[2023-05-26 15:49:24.571] [INFO ] [http-nio-8090-exec-2] com.asia.service.FileService
+				파일이 존재하지 않습니다.
+[2023-05-26 15:49:24.571] [INFO ] [http-nio-8090-exec-2] com.asia.service.FileService
+				파일이 존재하지 않습니다.
+[2023-05-26 16:16:33.588] [INFO ] [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener
+				Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+[2023-05-26 16:16:33.745] [INFO ] [Thread-9] org.apache.coyote.http11.Http11NioProtocol
+				Pausing ProtocolHandler ["http-nio-8090"]
+[2023-05-26 16:16:33.746] [INFO ] [Thread-9] org.apache.catalina.core.StandardService
+				Stopping service [Tomcat]
+[2023-05-26 16:16:33.752] [INFO ] [Thread-9] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]
+				Destroying Spring FrameworkServlet 'dispatcherServlet'
+[2023-05-26 16:16:33.770] [INFO ] [Thread-9] org.apache.coyote.http11.Http11NioProtocol
+				Stopping ProtocolHandler ["http-nio-8090"]
+[2023-05-26 16:16:33.776] [INFO ] [Thread-9] org.apache.coyote.http11.Http11NioProtocol
+				Destroying ProtocolHandler ["http-nio-8090"]
+[2023-05-26 16:16:33.786] [INFO ] [Thread-9] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean
+				Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-05-26 16:16:33.803] [INFO ] [Thread-9] com.zaxxer.hikari.HikariDataSource
+				HikariPool-1 - Shutdown initiated...
+[2023-05-26 16:16:33.812] [INFO ] [Thread-9] com.zaxxer.hikari.HikariDataSource
+				HikariPool-1 - Shutdown completed.
+[2023-05-26 16:16:34.096] [INFO ] [restartedMain] com.asia.AsiaApplication
+				Starting AsiaApplication using Java 11.0.17 on DESKTOP-0GU3E42 with PID 5720 (C:\boot\asia\target\classes started by BIG603-12 in C:\boot\asia)
+[2023-05-26 16:16:34.096] [INFO ] [restartedMain] com.asia.AsiaApplication
+				No active profile set, falling back to 1 default profile: "default"
+[2023-05-26 16:16:34.329] [INFO ] [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate
+				Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-05-26 16:16:34.355] [INFO ] [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate
+				Finished Spring Data repository scanning in 26 ms. Found 4 JPA repository interfaces.
+[2023-05-26 16:16:34.495] [INFO ] [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer
+				Tomcat initialized with port(s): 8090 (http)
+[2023-05-26 16:16:34.495] [INFO ] [restartedMain] org.apache.coyote.http11.Http11NioProtocol
+				Initializing ProtocolHandler ["http-nio-8090"]
+[2023-05-26 16:16:34.495] [INFO ] [restartedMain] org.apache.catalina.core.StandardService
+				Starting service [Tomcat]
+[2023-05-26 16:16:34.496] [INFO ] [restartedMain] org.apache.catalina.core.StandardEngine
+				Starting Servlet engine: [Apache Tomcat/9.0.74]
+[2023-05-26 16:16:34.526] [INFO ] [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]
+				Initializing Spring embedded WebApplicationContext
+[2023-05-26 16:16:34.526] [INFO ] [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext
+				Root WebApplicationContext: initialization completed in 423 ms
+[2023-05-26 16:16:34.548] [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource
+				HikariPool-2 - Starting...
+[2023-05-26 16:16:34.548] [WARN ] [restartedMain] com.zaxxer.hikari.util.DriverDataSource
+				Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+[2023-05-26 16:16:34.566] [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource
+				HikariPool-2 - Start completed.
+[2023-05-26 16:16:34.566] [INFO ] [restartedMain] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration
+				H2 console available at '/h2-console'. Database available at 'jdbc:oracle:thin:@localhost:1521:xe'
+[2023-05-26 16:16:34.607] [INFO ] [restartedMain] org.hibernate.jpa.internal.util.LogHelper
+				HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-05-26 16:16:34.618] [INFO ] [restartedMain] org.hibernate.dialect.Dialect
+				HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+[2023-05-26 16:16:34.644] [WARN ] [restartedMain] org.hibernate.orm.deprecation
+				HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+[2023-05-26 16:16:34.644] [WARN ] [restartedMain] org.hibernate.orm.deprecation
+				HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+[2023-05-26 16:16:34.644] [WARN ] [restartedMain] org.hibernate.orm.deprecation
+				HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+[2023-05-26 16:16:34.644] [WARN ] [restartedMain] org.hibernate.orm.deprecation
+				HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+[2023-05-26 16:16:34.791] [INFO ] [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator
+				HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-05-26 16:16:34.792] [INFO ] [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean
+				Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-05-26 16:16:34.818] [WARN ] [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration
+				spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-05-26 16:16:35.098] [WARN ] [restartedMain] org.springframework.security.config.annotation.web.builders.WebSecurity
+				You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2023-05-26 16:16:35.098] [INFO ] [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain
+				Will not secure Ant [pattern='/css/**']
+[2023-05-26 16:16:35.098] [WARN ] [restartedMain] org.springframework.security.config.annotation.web.builders.WebSecurity
+				You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2023-05-26 16:16:35.098] [INFO ] [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain
+				Will not secure Ant [pattern='/js/**']
+[2023-05-26 16:16:35.098] [WARN ] [restartedMain] org.springframework.security.config.annotation.web.builders.WebSecurity
+				You are asking Spring Security to ignore Ant [pattern='/img/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2023-05-26 16:16:35.098] [INFO ] [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain
+				Will not secure Ant [pattern='/img/**']
+[2023-05-26 16:16:35.104] [INFO ] [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain
+				Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@66527e38, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@62a89d1c, org.springframework.security.web.context.SecurityContextPersistenceFilter@115513a1, org.springframework.security.web.header.HeaderWriterFilter@6e39d7a5, org.springframework.security.web.csrf.CsrfFilter@1f7c273e, org.springframework.security.web.authentication.logout.LogoutFilter@7e68c491, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@68af6d2c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7cad5f97, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5c893b58, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@47992299, org.springframework.security.web.session.SessionManagementFilter@6f6e9ca5, org.springframework.security.web.access.ExceptionTranslationFilter@360b73d7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4ff9e4e5]
+[2023-05-26 16:16:35.157] [INFO ] [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer
+				LiveReload server is running on port 35729
+[2023-05-26 16:16:35.167] [INFO ] [restartedMain] org.apache.coyote.http11.Http11NioProtocol
+				Starting ProtocolHandler ["http-nio-8090"]
+[2023-05-26 16:16:35.169] [INFO ] [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer
+				Tomcat started on port(s): 8090 (http) with context path ''
+[2023-05-26 16:16:35.174] [INFO ] [restartedMain] com.asia.AsiaApplication
+				Started AsiaApplication in 1.112 seconds (JVM running for 20302.772)
+[2023-05-26 16:16:35.176] [INFO ] [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener
+				Condition evaluation unchanged
+[2023-05-26 16:18:34.144] [INFO ] [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener
+				Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+[2023-05-26 16:18:34.231] [INFO ] [Thread-238] org.apache.coyote.http11.Http11NioProtocol
+				Pausing ProtocolHandler ["http-nio-8090"]
+[2023-05-26 16:18:34.231] [INFO ] [Thread-238] org.apache.catalina.core.StandardService
+				Stopping service [Tomcat]
+[2023-05-26 16:18:34.236] [INFO ] [Thread-238] org.apache.coyote.http11.Http11NioProtocol
+				Stopping ProtocolHandler ["http-nio-8090"]
+[2023-05-26 16:18:34.238] [INFO ] [Thread-238] org.apache.coyote.http11.Http11NioProtocol
+				Destroying ProtocolHandler ["http-nio-8090"]
+[2023-05-26 16:18:34.241] [INFO ] [Thread-238] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean
+				Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-05-26 16:18:34.241] [INFO ] [Thread-238] com.zaxxer.hikari.HikariDataSource
+				HikariPool-2 - Shutdown initiated...
+[2023-05-26 16:18:34.267] [INFO ] [Thread-238] com.zaxxer.hikari.HikariDataSource
+				HikariPool-2 - Shutdown completed.
+[2023-05-26 16:18:34.366] [INFO ] [restartedMain] com.asia.AsiaApplication
+				Starting AsiaApplication using Java 11.0.17 on DESKTOP-0GU3E42 with PID 5720 (C:\boot\asia\target\classes started by BIG603-12 in C:\boot\asia)
+[2023-05-26 16:18:34.366] [INFO ] [restartedMain] com.asia.AsiaApplication
+				No active profile set, falling back to 1 default profile: "default"
+[2023-05-26 16:18:34.549] [INFO ] [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate
+				Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-05-26 16:18:34.575] [INFO ] [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate
+				Finished Spring Data repository scanning in 25 ms. Found 4 JPA repository interfaces.
+[2023-05-26 16:18:34.656] [INFO ] [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer
+				Tomcat initialized with port(s): 8090 (http)
+[2023-05-26 16:18:34.657] [INFO ] [restartedMain] org.apache.coyote.http11.Http11NioProtocol
+				Initializing ProtocolHandler ["http-nio-8090"]
+[2023-05-26 16:18:34.657] [INFO ] [restartedMain] org.apache.catalina.core.StandardService
+				Starting service [Tomcat]
+[2023-05-26 16:18:34.657] [INFO ] [restartedMain] org.apache.catalina.core.StandardEngine
+				Starting Servlet engine: [Apache Tomcat/9.0.74]
+[2023-05-26 16:18:34.675] [INFO ] [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]
+				Initializing Spring embedded WebApplicationContext
+[2023-05-26 16:18:34.675] [INFO ] [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext
+				Root WebApplicationContext: initialization completed in 308 ms
+[2023-05-26 16:18:34.685] [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource
+				HikariPool-3 - Starting...
+[2023-05-26 16:18:34.685] [WARN ] [restartedMain] com.zaxxer.hikari.util.DriverDataSource
+				Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+[2023-05-26 16:18:34.700] [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource
+				HikariPool-3 - Start completed.
+[2023-05-26 16:18:34.700] [INFO ] [restartedMain] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration
+				H2 console available at '/h2-console'. Database available at 'jdbc:oracle:thin:@localhost:1521:xe'
+[2023-05-26 16:18:34.725] [INFO ] [restartedMain] org.hibernate.jpa.internal.util.LogHelper
+				HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-05-26 16:18:34.733] [INFO ] [restartedMain] org.hibernate.dialect.Dialect
+				HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+[2023-05-26 16:18:34.748] [WARN ] [restartedMain] org.hibernate.orm.deprecation
+				HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+[2023-05-26 16:18:34.748] [WARN ] [restartedMain] org.hibernate.orm.deprecation
+				HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+[2023-05-26 16:18:34.748] [WARN ] [restartedMain] org.hibernate.orm.deprecation
+				HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+[2023-05-26 16:18:34.748] [WARN ] [restartedMain] org.hibernate.orm.deprecation
+				HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+[2023-05-26 16:18:34.812] [INFO ] [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator
+				HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-05-26 16:18:34.812] [INFO ] [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean
+				Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-05-26 16:18:34.829] [WARN ] [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration
+				spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-05-26 16:18:35.055] [WARN ] [restartedMain] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext
+				Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'vocController' defined in file [C:\boot\asia\target\classes\com\asia\controller\VocController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'vocService' defined in file [C:\boot\asia\target\classes\com\asia\service\VocService.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'attachService': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'attachImgLocation' in value "${attachImgLocation}"
+[2023-05-26 16:18:35.056] [INFO ] [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean
+				Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-05-26 16:18:35.056] [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource
+				HikariPool-3 - Shutdown initiated...
+[2023-05-26 16:18:35.062] [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource
+				HikariPool-3 - Shutdown completed.
+[2023-05-26 16:18:35.062] [INFO ] [restartedMain] org.apache.catalina.core.StandardService
+				Stopping service [Tomcat]
+[2023-05-26 16:18:35.188] [INFO ] [restartedMain] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener
+				
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[2023-05-26 16:18:35.234] [ERROR] [restartedMain] org.springframework.boot.SpringApplication
+				Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'vocController' defined in file [C:\boot\asia\target\classes\com\asia\controller\VocController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'vocService' defined in file [C:\boot\asia\target\classes\com\asia\service\VocService.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'attachService': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'attachImgLocation' in value "${attachImgLocation}"
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.asia.AsiaApplication.main(AsiaApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'vocService' defined in file [C:\boot\asia\target\classes\com\asia\service\VocService.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'attachService': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'attachImgLocation' in value "${attachImgLocation}"
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 24 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'attachService': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'attachImgLocation' in value "${attachImgLocation}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 38 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'attachImgLocation' in value "${attachImgLocation}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:191)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:936)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1332)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	... 50 common frames omitted
+[2023-05-26 16:18:45.135] [INFO ] [restartedMain] com.asia.AsiaApplication
+				Starting AsiaApplication using Java 11.0.17 on DESKTOP-0GU3E42 with PID 5720 (C:\boot\asia\target\classes started by BIG603-12 in C:\boot\asia)
+[2023-05-26 16:18:45.135] [INFO ] [restartedMain] com.asia.AsiaApplication
+				No active profile set, falling back to 1 default profile: "default"
+[2023-05-26 16:18:45.316] [INFO ] [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate
+				Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-05-26 16:18:45.341] [INFO ] [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate
+				Finished Spring Data repository scanning in 24 ms. Found 4 JPA repository interfaces.
+[2023-05-26 16:18:45.424] [INFO ] [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer
+				Tomcat initialized with port(s): 8090 (http)
+[2023-05-26 16:18:45.424] [INFO ] [restartedMain] org.apache.coyote.http11.Http11NioProtocol
+				Initializing ProtocolHandler ["http-nio-8090"]
+[2023-05-26 16:18:45.424] [INFO ] [restartedMain] org.apache.catalina.core.StandardService
+				Starting service [Tomcat]
+[2023-05-26 16:18:45.424] [INFO ] [restartedMain] org.apache.catalina.core.StandardEngine
+				Starting Servlet engine: [Apache Tomcat/9.0.74]
+[2023-05-26 16:18:45.442] [INFO ] [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/]
+				Initializing Spring embedded WebApplicationContext
+[2023-05-26 16:18:45.442] [INFO ] [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext
+				Root WebApplicationContext: initialization completed in 305 ms
+[2023-05-26 16:18:45.450] [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource
+				HikariPool-4 - Starting...
+[2023-05-26 16:18:45.450] [WARN ] [restartedMain] com.zaxxer.hikari.util.DriverDataSource
+				Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+[2023-05-26 16:18:45.463] [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource
+				HikariPool-4 - Start completed.
+[2023-05-26 16:18:45.463] [INFO ] [restartedMain] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration
+				H2 console available at '/h2-console'. Database available at 'jdbc:oracle:thin:@localhost:1521:xe'
+[2023-05-26 16:18:45.494] [INFO ] [restartedMain] org.hibernate.jpa.internal.util.LogHelper
+				HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-05-26 16:18:45.500] [INFO ] [restartedMain] org.hibernate.dialect.Dialect
+				HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+[2023-05-26 16:18:45.516] [WARN ] [restartedMain] org.hibernate.orm.deprecation
+				HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+[2023-05-26 16:18:45.516] [WARN ] [restartedMain] org.hibernate.orm.deprecation
+				HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+[2023-05-26 16:18:45.516] [WARN ] [restartedMain] org.hibernate.orm.deprecation
+				HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+[2023-05-26 16:18:45.517] [WARN ] [restartedMain] org.hibernate.orm.deprecation
+				HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+[2023-05-26 16:18:45.587] [INFO ] [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator
+				HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-05-26 16:18:45.588] [INFO ] [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean
+				Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-05-26 16:18:45.608] [WARN ] [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration
+				spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-05-26 16:18:45.805] [WARN ] [restartedMain] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext
+				Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'vocController' defined in file [C:\boot\asia\target\classes\com\asia\controller\VocController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'vocService' defined in file [C:\boot\asia\target\classes\com\asia\service\VocService.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'attachService': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'attachImgLocation' in value "${attachImgLocation}"
+[2023-05-26 16:18:45.806] [INFO ] [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean
+				Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-05-26 16:18:45.806] [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource
+				HikariPool-4 - Shutdown initiated...
+[2023-05-26 16:18:45.811] [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource
+				HikariPool-4 - Shutdown completed.
+[2023-05-26 16:18:45.811] [INFO ] [restartedMain] org.apache.catalina.core.StandardService
+				Stopping service [Tomcat]
+[2023-05-26 16:18:45.818] [INFO ] [restartedMain] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener
+				
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[2023-05-26 16:18:45.821] [ERROR] [restartedMain] org.springframework.boot.SpringApplication
+				Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'vocController' defined in file [C:\boot\asia\target\classes\com\asia\controller\VocController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'vocService' defined in file [C:\boot\asia\target\classes\com\asia\service\VocService.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'attachService': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'attachImgLocation' in value "${attachImgLocation}"
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.asia.AsiaApplication.main(AsiaApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'vocService' defined in file [C:\boot\asia\target\classes\com\asia\service\VocService.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'attachService': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'attachImgLocation' in value "${attachImgLocation}"
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 24 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'attachService': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'attachImgLocation' in value "${attachImgLocation}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 38 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'attachImgLocation' in value "${attachImgLocation}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:191)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:936)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1332)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	... 50 common frames omitted
+[2023-05-26 16:19:05.137] [INFO ] [restartedMain] com.asia.AsiaApplication
+				Starting AsiaApplication using Java 11.0.17 on DESKTOP-0GU3E42 with PID 5720 (C:\boot\asia\target\classes started by BIG603-12 in C:\boot\asia)
+[2023-05-26 16:19:05.137] [INFO ] [restartedMain] com.asia.AsiaApplication
+				No active profile set, falling back to 1 default profile: "default"
+[2023-05-26 16:19:05.306] [INFO ] [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate
+				Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-05-26 16:19:05.330] [INFO ] [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate
+				Finished Spring Data repository scanning in 23 ms. Found 4 JPA repository interfaces.
+[2023-05-26 16:19:05.411] [INFO ] [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer
+				Tomcat initialized with port(s): 8090 (http)
+[2023-05-26 16:19:05.411] [INFO ] [restartedMain] org.apache.coyote.http11.Http11NioProtocol
+				Initializing ProtocolHandler ["http-nio-8090"]
+[2023-05-26 16:19:05.412] [INFO ] [restartedMain] org.apache.catalina.core.StandardService
+				Starting service [Tomcat]
+[2023-05-26 16:19:05.412] [INFO ] [restartedMain] org.apache.catalina.core.StandardEngine
+				Starting Servlet engine: [Apache Tomcat/9.0.74]
+[2023-05-26 16:19:05.434] [INFO ] [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat-2].[localhost].[/]
+				Initializing Spring embedded WebApplicationContext
+[2023-05-26 16:19:05.434] [INFO ] [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext
+				Root WebApplicationContext: initialization completed in 295 ms
+[2023-05-26 16:19:05.443] [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource
+				HikariPool-5 - Starting...
+[2023-05-26 16:19:05.443] [WARN ] [restartedMain] com.zaxxer.hikari.util.DriverDataSource
+				Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+[2023-05-26 16:19:05.456] [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource
+				HikariPool-5 - Start completed.
+[2023-05-26 16:19:05.456] [INFO ] [restartedMain] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration
+				H2 console available at '/h2-console'. Database available at 'jdbc:oracle:thin:@localhost:1521:xe'
+[2023-05-26 16:19:05.480] [INFO ] [restartedMain] org.hibernate.jpa.internal.util.LogHelper
+				HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-05-26 16:19:05.485] [INFO ] [restartedMain] org.hibernate.dialect.Dialect
+				HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+[2023-05-26 16:19:05.500] [WARN ] [restartedMain] org.hibernate.orm.deprecation
+				HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+[2023-05-26 16:19:05.500] [WARN ] [restartedMain] org.hibernate.orm.deprecation
+				HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+[2023-05-26 16:19:05.500] [WARN ] [restartedMain] org.hibernate.orm.deprecation
+				HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+[2023-05-26 16:19:05.500] [WARN ] [restartedMain] org.hibernate.orm.deprecation
+				HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+[2023-05-26 16:19:05.557] [INFO ] [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator
+				HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-05-26 16:19:05.557] [INFO ] [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean
+				Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-05-26 16:19:05.575] [WARN ] [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration
+				spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-05-26 16:19:05.783] [WARN ] [restartedMain] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext
+				Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'vocController' defined in file [C:\boot\asia\target\classes\com\asia\controller\VocController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'vocService' defined in file [C:\boot\asia\target\classes\com\asia\service\VocService.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'attachService': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'attachImgLocation' in value "${attachImgLocation}"
+[2023-05-26 16:19:05.784] [INFO ] [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean
+				Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-05-26 16:19:05.784] [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource
+				HikariPool-5 - Shutdown initiated...
+[2023-05-26 16:19:05.789] [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource
+				HikariPool-5 - Shutdown completed.
+[2023-05-26 16:19:05.790] [INFO ] [restartedMain] org.apache.catalina.core.StandardService
+				Stopping service [Tomcat]
+[2023-05-26 16:19:05.796] [INFO ] [restartedMain] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener
+				
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[2023-05-26 16:19:05.799] [ERROR] [restartedMain] org.springframework.boot.SpringApplication
+				Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'vocController' defined in file [C:\boot\asia\target\classes\com\asia\controller\VocController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'vocService' defined in file [C:\boot\asia\target\classes\com\asia\service\VocService.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'attachService': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'attachImgLocation' in value "${attachImgLocation}"
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.asia.AsiaApplication.main(AsiaApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'vocService' defined in file [C:\boot\asia\target\classes\com\asia\service\VocService.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'attachService': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'attachImgLocation' in value "${attachImgLocation}"
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 24 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'attachService': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'attachImgLocation' in value "${attachImgLocation}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 38 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'attachImgLocation' in value "${attachImgLocation}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:191)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:936)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1332)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	... 50 common frames omitted
+[2023-05-26 16:20:56.331] [INFO ] [restartedMain] com.asia.AsiaApplication
+				Starting AsiaApplication using Java 11.0.17 on DESKTOP-0GU3E42 with PID 5720 (C:\boot\asia\target\classes started by BIG603-12 in C:\boot\asia)
+[2023-05-26 16:20:56.331] [INFO ] [restartedMain] com.asia.AsiaApplication
+				No active profile set, falling back to 1 default profile: "default"
+[2023-05-26 16:20:56.511] [INFO ] [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate
+				Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-05-26 16:20:56.541] [INFO ] [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate
+				Finished Spring Data repository scanning in 29 ms. Found 4 JPA repository interfaces.
+[2023-05-26 16:20:56.621] [INFO ] [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer
+				Tomcat initialized with port(s): 8090 (http)
+[2023-05-26 16:20:56.622] [INFO ] [restartedMain] org.apache.coyote.http11.Http11NioProtocol
+				Initializing ProtocolHandler ["http-nio-8090"]
+[2023-05-26 16:20:56.623] [INFO ] [restartedMain] org.apache.catalina.core.StandardService
+				Starting service [Tomcat]
+[2023-05-26 16:20:56.623] [INFO ] [restartedMain] org.apache.catalina.core.StandardEngine
+				Starting Servlet engine: [Apache Tomcat/9.0.74]
+[2023-05-26 16:20:56.642] [INFO ] [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat-3].[localhost].[/]
+				Initializing Spring embedded WebApplicationContext
+[2023-05-26 16:20:56.642] [INFO ] [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext
+				Root WebApplicationContext: initialization completed in 309 ms
+[2023-05-26 16:20:56.651] [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource
+				HikariPool-6 - Starting...
+[2023-05-26 16:20:56.651] [WARN ] [restartedMain] com.zaxxer.hikari.util.DriverDataSource
+				Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+[2023-05-26 16:20:56.664] [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource
+				HikariPool-6 - Start completed.
+[2023-05-26 16:20:56.664] [INFO ] [restartedMain] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration
+				H2 console available at '/h2-console'. Database available at 'jdbc:oracle:thin:@localhost:1521:xe'
+[2023-05-26 16:20:56.688] [INFO ] [restartedMain] org.hibernate.jpa.internal.util.LogHelper
+				HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-05-26 16:20:56.694] [INFO ] [restartedMain] org.hibernate.dialect.Dialect
+				HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+[2023-05-26 16:20:56.707] [WARN ] [restartedMain] org.hibernate.orm.deprecation
+				HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+[2023-05-26 16:20:56.707] [WARN ] [restartedMain] org.hibernate.orm.deprecation
+				HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+[2023-05-26 16:20:56.708] [WARN ] [restartedMain] org.hibernate.orm.deprecation
+				HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+[2023-05-26 16:20:56.708] [WARN ] [restartedMain] org.hibernate.orm.deprecation
+				HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+[2023-05-26 16:20:56.763] [INFO ] [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator
+				HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-05-26 16:20:56.764] [INFO ] [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean
+				Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-05-26 16:20:56.781] [WARN ] [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration
+				spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-05-26 16:20:56.977] [WARN ] [restartedMain] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext
+				Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'vocController' defined in file [C:\boot\asia\target\classes\com\asia\controller\VocController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'vocService' defined in file [C:\boot\asia\target\classes\com\asia\service\VocService.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'attachService': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'attachImgLocation' in value "${attachImgLocation}"
+[2023-05-26 16:20:56.977] [INFO ] [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean
+				Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-05-26 16:20:56.978] [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource
+				HikariPool-6 - Shutdown initiated...
+[2023-05-26 16:20:56.982] [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource
+				HikariPool-6 - Shutdown completed.
+[2023-05-26 16:20:56.982] [INFO ] [restartedMain] org.apache.catalina.core.StandardService
+				Stopping service [Tomcat]
+[2023-05-26 16:20:56.988] [INFO ] [restartedMain] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener
+				
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[2023-05-26 16:20:56.992] [ERROR] [restartedMain] org.springframework.boot.SpringApplication
+				Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'vocController' defined in file [C:\boot\asia\target\classes\com\asia\controller\VocController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'vocService' defined in file [C:\boot\asia\target\classes\com\asia\service\VocService.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'attachService': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'attachImgLocation' in value "${attachImgLocation}"
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.asia.AsiaApplication.main(AsiaApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'vocService' defined in file [C:\boot\asia\target\classes\com\asia\service\VocService.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'attachService': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'attachImgLocation' in value "${attachImgLocation}"
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 24 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'attachService': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'attachImgLocation' in value "${attachImgLocation}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 38 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'attachImgLocation' in value "${attachImgLocation}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:191)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:936)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1332)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	... 50 common frames omitted
+[2023-05-26 16:21:41.486] [INFO ] [restartedMain] com.asia.AsiaApplication
+				Starting AsiaApplication using Java 11.0.17 on DESKTOP-0GU3E42 with PID 5720 (C:\boot\asia\target\classes started by BIG603-12 in C:\boot\asia)
+[2023-05-26 16:21:41.487] [INFO ] [restartedMain] com.asia.AsiaApplication
+				No active profile set, falling back to 1 default profile: "default"
+[2023-05-26 16:21:41.653] [INFO ] [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate
+				Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-05-26 16:21:41.676] [INFO ] [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate
+				Finished Spring Data repository scanning in 22 ms. Found 4 JPA repository interfaces.
+[2023-05-26 16:21:41.762] [INFO ] [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer
+				Tomcat initialized with port(s): 8090 (http)
+[2023-05-26 16:21:41.763] [INFO ] [restartedMain] org.apache.coyote.http11.Http11NioProtocol
+				Initializing ProtocolHandler ["http-nio-8090"]
+[2023-05-26 16:21:41.763] [INFO ] [restartedMain] org.apache.catalina.core.StandardService
+				Starting service [Tomcat]
+[2023-05-26 16:21:41.763] [INFO ] [restartedMain] org.apache.catalina.core.StandardEngine
+				Starting Servlet engine: [Apache Tomcat/9.0.74]
+[2023-05-26 16:21:41.786] [INFO ] [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat-4].[localhost].[/]
+				Initializing Spring embedded WebApplicationContext
+[2023-05-26 16:21:41.786] [INFO ] [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext
+				Root WebApplicationContext: initialization completed in 298 ms
+[2023-05-26 16:21:41.800] [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource
+				HikariPool-7 - Starting...
+[2023-05-26 16:21:41.800] [WARN ] [restartedMain] com.zaxxer.hikari.util.DriverDataSource
+				Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+[2023-05-26 16:21:41.817] [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource
+				HikariPool-7 - Start completed.
+[2023-05-26 16:21:41.817] [INFO ] [restartedMain] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration
+				H2 console available at '/h2-console'. Database available at 'jdbc:oracle:thin:@localhost:1521:xe'
+[2023-05-26 16:21:41.841] [INFO ] [restartedMain] org.hibernate.jpa.internal.util.LogHelper
+				HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-05-26 16:21:41.848] [INFO ] [restartedMain] org.hibernate.dialect.Dialect
+				HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+[2023-05-26 16:21:41.867] [WARN ] [restartedMain] org.hibernate.orm.deprecation
+				HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+[2023-05-26 16:21:41.868] [WARN ] [restartedMain] org.hibernate.orm.deprecation
+				HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+[2023-05-26 16:21:41.868] [WARN ] [restartedMain] org.hibernate.orm.deprecation
+				HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+[2023-05-26 16:21:41.868] [WARN ] [restartedMain] org.hibernate.orm.deprecation
+				HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+[2023-05-26 16:21:41.928] [INFO ] [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator
+				HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-05-26 16:21:41.928] [INFO ] [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean
+				Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-05-26 16:21:41.947] [WARN ] [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration
+				spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-05-26 16:21:42.237] [WARN ] [restartedMain] org.springframework.security.config.annotation.web.builders.WebSecurity
+				You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2023-05-26 16:21:42.237] [INFO ] [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain
+				Will not secure Ant [pattern='/css/**']
+[2023-05-26 16:21:42.237] [WARN ] [restartedMain] org.springframework.security.config.annotation.web.builders.WebSecurity
+				You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2023-05-26 16:21:42.237] [INFO ] [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain
+				Will not secure Ant [pattern='/js/**']
+[2023-05-26 16:21:42.237] [WARN ] [restartedMain] org.springframework.security.config.annotation.web.builders.WebSecurity
+				You are asking Spring Security to ignore Ant [pattern='/img/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2023-05-26 16:21:42.237] [INFO ] [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain
+				Will not secure Ant [pattern='/img/**']
+[2023-05-26 16:21:42.242] [INFO ] [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain
+				Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@79ddd9cc, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@f9888a6, org.springframework.security.web.context.SecurityContextPersistenceFilter@202ec5a7, org.springframework.security.web.header.HeaderWriterFilter@4bb23708, org.springframework.security.web.csrf.CsrfFilter@147d04be, org.springframework.security.web.authentication.logout.LogoutFilter@335469f0, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3c2ae0a5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@30c7f6c1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6a178da6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@31fd6eeb, org.springframework.security.web.session.SessionManagementFilter@5c8a627c, org.springframework.security.web.access.ExceptionTranslationFilter@55c8b63d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@611a822f]
+[2023-05-26 16:21:42.288] [INFO ] [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer
+				LiveReload server is running on port 35729
+[2023-05-26 16:21:42.300] [INFO ] [restartedMain] org.apache.coyote.http11.Http11NioProtocol
+				Starting ProtocolHandler ["http-nio-8090"]
+[2023-05-26 16:21:42.302] [INFO ] [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer
+				Tomcat started on port(s): 8090 (http) with context path ''
+[2023-05-26 16:21:42.308] [INFO ] [restartedMain] com.asia.AsiaApplication
+				Started AsiaApplication in 0.881 seconds (JVM running for 20609.905)
+[2023-05-26 16:21:42.311] [INFO ] [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener
+				Condition evaluation unchanged
+[2023-05-26 16:23:41.940] [INFO ] [http-nio-8090-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat-4].[localhost].[/]
+				Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-05-26 16:23:41.941] [INFO ] [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet
+				Initializing Servlet 'dispatcherServlet'
+[2023-05-26 16:23:41.942] [INFO ] [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet
+				Completed initialization in 1 ms
+[2023-05-26 16:52:20.791] [INFO ] [RMI TCP Connection(375)-127.0.0.1] org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin
+				Application shutdown requested.
+[2023-05-26 16:52:20.859] [INFO ] [RMI TCP Connection(375)-127.0.0.1] org.apache.coyote.http11.Http11NioProtocol
+				Pausing ProtocolHandler ["http-nio-8090"]
+[2023-05-26 16:52:20.859] [INFO ] [RMI TCP Connection(375)-127.0.0.1] org.apache.catalina.core.StandardService
+				Stopping service [Tomcat]
+[2023-05-26 16:52:20.861] [INFO ] [RMI TCP Connection(375)-127.0.0.1] org.apache.catalina.core.ContainerBase.[Tomcat-4].[localhost].[/]
+				Destroying Spring FrameworkServlet 'dispatcherServlet'
+[2023-05-26 16:52:20.867] [INFO ] [RMI TCP Connection(375)-127.0.0.1] org.apache.coyote.http11.Http11NioProtocol
+				Stopping ProtocolHandler ["http-nio-8090"]
+[2023-05-26 16:52:20.869] [INFO ] [RMI TCP Connection(375)-127.0.0.1] org.apache.coyote.http11.Http11NioProtocol
+				Destroying ProtocolHandler ["http-nio-8090"]
+[2023-05-26 16:52:20.876] [INFO ] [RMI TCP Connection(375)-127.0.0.1] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean
+				Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-05-26 16:52:20.877] [INFO ] [RMI TCP Connection(375)-127.0.0.1] com.zaxxer.hikari.HikariDataSource
+				HikariPool-7 - Shutdown initiated...
+[2023-05-26 16:52:20.884] [INFO ] [RMI TCP Connection(375)-127.0.0.1] com.zaxxer.hikari.HikariDataSource
+				HikariPool-7 - Shutdown completed.
+[2023-05-26 17:24:58.009] [INFO ] [background-preinit] org.hibernate.validator.internal.util.Version
+				HV000001: Hibernate Validator 6.2.5.Final
+[2023-05-26 17:24:58.012] [INFO ] [restartedMain] com.asia.AsiaApplication
+				Starting AsiaApplication using Java 11.0.17 on DESKTOP-0GU3E42 with PID 12192 (C:\boot\asia\target\classes started by BIG603-12 in C:\boot\asia)
+[2023-05-26 17:24:58.014] [INFO ] [restartedMain] com.asia.AsiaApplication
+				No active profile set, falling back to 1 default profile: "default"
+[2023-05-26 17:24:58.286] [INFO ] [restartedMain] org.springframework.boot.devtools.restart.ChangeableUrls
+				The Class-Path manifest attribute in C:\Users\BIG603-12\.m2\repository\com\oracle\database\jdbc\ojdbc8\21.5.0.0\ojdbc8-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/BIG603-12/.m2/repository/com/oracle/database/jdbc/ojdbc8/21.5.0.0/oraclepki.jar
+[2023-05-26 17:24:58.287] [INFO ] [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor
+				Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2023-05-26 17:24:58.287] [INFO ] [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor
+				For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2023-05-26 17:24:59.021] [INFO ] [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate
+				Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-05-26 17:24:59.101] [INFO ] [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate
+				Finished Spring Data repository scanning in 73 ms. Found 4 JPA repository interfaces.
+[2023-05-26 17:24:59.804] [INFO ] [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer
+				Tomcat initialized with port(s): 8090 (http)
+[2023-05-26 17:24:59.814] [INFO ] [restartedMain] org.apache.coyote.http11.Http11NioProtocol
+				Initializing ProtocolHandler ["http-nio-8090"]
+[2023-05-26 17:24:59.815] [INFO ] [restartedMain] org.apache.catalina.core.StandardService
+				Starting service [Tomcat]
+[2023-05-26 17:24:59.815] [INFO ] [restartedMain] org.apache.catalina.core.StandardEngine
+				Starting Servlet engine: [Apache Tomcat/9.0.74]
+[2023-05-26 17:24:59.911] [INFO ] [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]
+				Initializing Spring embedded WebApplicationContext
+[2023-05-26 17:24:59.911] [INFO ] [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext
+				Root WebApplicationContext: initialization completed in 1624 ms
+[2023-05-26 17:24:59.969] [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource
+				HikariPool-1 - Starting...
+[2023-05-26 17:24:59.978] [WARN ] [restartedMain] com.zaxxer.hikari.util.DriverDataSource
+				Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+[2023-05-26 17:25:00.197] [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource
+				HikariPool-1 - Start completed.
+[2023-05-26 17:25:00.207] [INFO ] [restartedMain] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration
+				H2 console available at '/h2-console'. Database available at 'jdbc:oracle:thin:@localhost:1521:xe'
+[2023-05-26 17:25:00.353] [INFO ] [restartedMain] org.hibernate.jpa.internal.util.LogHelper
+				HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-05-26 17:25:00.426] [INFO ] [restartedMain] org.hibernate.Version
+				HHH000412: Hibernate ORM core version 5.6.15.Final
+[2023-05-26 17:25:00.607] [INFO ] [restartedMain] org.hibernate.annotations.common.Version
+				HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2023-05-26 17:25:00.746] [INFO ] [restartedMain] org.hibernate.dialect.Dialect
+				HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+[2023-05-26 17:25:01.098] [WARN ] [restartedMain] org.hibernate.orm.deprecation
+				HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+[2023-05-26 17:25:01.100] [WARN ] [restartedMain] org.hibernate.orm.deprecation
+				HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+[2023-05-26 17:25:01.100] [WARN ] [restartedMain] org.hibernate.orm.deprecation
+				HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+[2023-05-26 17:25:01.101] [WARN ] [restartedMain] org.hibernate.orm.deprecation
+				HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+[2023-05-26 17:25:01.929] [INFO ] [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator
+				HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-05-26 17:25:01.939] [INFO ] [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean
+				Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-05-26 17:25:01.979] [WARN ] [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration
+				spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-05-26 17:25:02.950] [WARN ] [restartedMain] org.springframework.security.config.annotation.web.builders.WebSecurity
+				You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2023-05-26 17:25:02.950] [INFO ] [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain
+				Will not secure Ant [pattern='/css/**']
+[2023-05-26 17:25:02.951] [WARN ] [restartedMain] org.springframework.security.config.annotation.web.builders.WebSecurity
+				You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2023-05-26 17:25:02.951] [INFO ] [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain
+				Will not secure Ant [pattern='/js/**']
+[2023-05-26 17:25:02.951] [WARN ] [restartedMain] org.springframework.security.config.annotation.web.builders.WebSecurity
+				You are asking Spring Security to ignore Ant [pattern='/img/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2023-05-26 17:25:02.951] [INFO ] [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain
+				Will not secure Ant [pattern='/img/**']
+[2023-05-26 17:25:02.993] [INFO ] [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain
+				Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2ae2d651, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2d11bf21, org.springframework.security.web.context.SecurityContextPersistenceFilter@3c52feb8, org.springframework.security.web.header.HeaderWriterFilter@6762bea2, org.springframework.security.web.csrf.CsrfFilter@3074d1b2, org.springframework.security.web.authentication.logout.LogoutFilter@2f63702, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@56e061f7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6106031b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7d3c6fb9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@949682b, org.springframework.security.web.session.SessionManagementFilter@4147584c, org.springframework.security.web.access.ExceptionTranslationFilter@45e869ec, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5852c420]
+[2023-05-26 17:25:03.355] [INFO ] [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer
+				LiveReload server is running on port 35729
+[2023-05-26 17:25:03.380] [INFO ] [restartedMain] org.apache.coyote.http11.Http11NioProtocol
+				Starting ProtocolHandler ["http-nio-8090"]
+[2023-05-26 17:25:03.395] [INFO ] [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer
+				Tomcat started on port(s): 8090 (http) with context path ''
+[2023-05-26 17:25:03.405] [INFO ] [restartedMain] com.asia.AsiaApplication
+				Started AsiaApplication in 5.911 seconds (JVM running for 6.93)
+[2023-05-26 17:25:09.698] [INFO ] [http-nio-8090-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]
+				Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-05-26 17:25:09.698] [INFO ] [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet
+				Initializing Servlet 'dispatcherServlet'
+[2023-05-26 17:25:09.699] [INFO ] [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet
+				Completed initialization in 1 ms
+[2023-05-26 17:25:10.489] [WARN ] [http-nio-8090-exec-1] nz.net.ultraq.thymeleaf.layoutdialect.fragments.FragmentProcessor
+				You don't need to put the layout:fragment/data-layout-fragment attribute into the <head> section - the decoration process will automatically copy the <head> section of your content templates into your layout page.

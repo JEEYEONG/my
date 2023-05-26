@@ -34,75 +34,91 @@
 </th:block>
 
 <head>
-	<link th:href="@{/css/vocForm.css}" rel="stylesheet">
+<link th:href="@{/css/vocForm.css}" rel="stylesheet">
 </head>
 
 <body>
-<div layout:fragment="content">
-<div>
-<section class="vocForm-contents">
-	<p><h4>글 작성하기</h4></p>
-	<div class="vocForm-inner">
-	<form class="vocForm-txt" role="form" method="post" action="/voc/new" enctype="multipart/form-data" th:object="${vocFormDto}">
-		<input type="hidden" th:field="*{num}">
-
+	<div layout:fragment="content">
 		<div>
-			<div class="vocForm-name">
-				<input type="text" th:field="*{name}" class="vocForm-name-input" placeholder="제목을 입력해주세요">
-			</div>
-			<p th:if="${#fields.hasErrors('name')}" th:errors="*{name}" class="fieldError">Incorrect data</p>
-		</div>
-		
-		
-		<div class="vocform-content">
-			<textarea th:field="*{content}" class="vocform-content-text" aria-label="With textarea" placeholder="내용을 입력해주세요"></textarea>
-			<p th:if="${#fields.hasErrors('content')}" th:errors="*{content}" class="fieldError">Incorrect data</p>
-		</div>
-			
-			
-			
-		<div class="vocForm-filebox" th:if="${#lists.isEmpty(vocFormDto.attachDtoList)}" >
-            <div class="file" th:each="numb: ${#numbers.sequence(1,5)}">
-               <label th:for="picture + ${numb}"><div class="btn-upload">+</div></label>
-               <input class="custom-file-input" th:id="picture + ${numb}" type="file" name="attachFile"/>
-               <input class="custom-file-label" value="첨부파일" placeholder="첨부파일" readonly="readonly" />
-            </div>
-          </div>
-			
-		<div class="vocForm-filebox" th:if="${not #lists.isEmpty(vocFormDto.attachDtoList)}">
-			<div class="file" th:each="attachDto, status:${vocFormDto.attachDtoList}">
-				<input type="hidden" name="attachIds" th:value="${attachDto.num}">
-				<label th:for="${not #strings.isEmpty(attachDto.oriname)} ? ${attachDto.oriname} : '첨부파일' + ${status.index+1}"><div class="btn-upload">+</div></label>
-				<input type="file" class="custom-file-input" th:id="${not #strings.isEmpty(attachDto.oriname)} ? ${attachDto.oriname} : '첨부파일' + ${status.index+1}" name="attachFile">
-				<input class="custom-file-label" th:value="${not #strings.isEmpty(attachDto.oriname)} ? ${attachDto.oriname} : '첨부파일' + ${status.index+1}" placeholder="첨부파일" readonly="readonly">
-			</div>
-		</div>
-		
+			<section class="vocForm">
+				<div class="vocForm-title">
+					<h4>글 작성하기</h4>
+				</div>
+				<div class="vocForm-container">
+					<form class="vocForm-txt" role="form" method="post" action="/voc/new" enctype="multipart/form-data" th:object="${vocFormDto}">
+						<input type="hidden" th:field="*{num}">
 
-	<div class="btn">
-		<div th:if="${#strings.isEmpty(vocFormDto.num)}"
-			style="text-align: center">
-			<button th:formaction="@{/voc/new}" type="submit"
-				class="btn-submit">등록</button>
-		</div>
+						<div>
+							<div class="vocForm-name">
+								<input type="text" th:field="*{name}" class="vocForm-name-input"
+									placeholder="제목을 입력해주세요">
+							</div>
+							<p th:if="${#fields.hasErrors('name')}" th:errors="*{name}"
+								class="fieldError">Incorrect data</p>
+						</div>
 
-		<div th:unless="${#strings.isEmpty(vocFormDto.num)}"
-			style="text-align: center">
-			<button th:formaction="@{'/voc/update/' + ${vocFormDto.num} }"
-				type="submit" class="btn-submit">수정</button>
+
+						<div class="vocform-content">
+							<textarea th:field="*{content}" class="vocform-content-text"
+								aria-label="With textarea" placeholder="내용을 입력해주세요"></textarea>
+							<p th:if="${#fields.hasErrors('content')}" th:errors="*{content}"
+								class="fieldError">Incorrect data</p>
+						</div>
+
+
+
+						<div class="vocForm-filebox"
+							th:if="${#lists.isEmpty(vocFormDto.attachDtoList)}">
+							<div class="file" th:each="numb: ${#numbers.sequence(1,5)}">
+								<label th:for="picture + ${numb}">
+								<div class="btn-upload">+</div></label>
+								<input class="custom-file-input" th:id="picture + ${numb}" type="file" name="attachFile" />
+								<input class="custom-file-label" value="첨부파일" placeholder="첨부파일"
+									readonly="readonly" />
+							</div>
+						</div>
+
+						<div class="vocForm-filebox"
+							th:if="${not #lists.isEmpty(vocFormDto.attachDtoList)}">
+							<div class="file"
+								th:each="attachDto, status:${vocFormDto.attachDtoList}">
+								<input type="hidden" name="attachIds"
+									th:value="${attachDto.num}"> <label
+									th:for="${not #strings.isEmpty(attachDto.oriname)} ? ${attachDto.oriname} : '첨부파일' + ${status.index+1}"><div
+										class="btn-upload">+</div></label> <input type="file"
+									class="custom-file-input"
+									th:id="${not #strings.isEmpty(attachDto.oriname)} ? ${attachDto.oriname} : '첨부파일' + ${status.index+1}"
+									name="attachFile"> <input class="custom-file-label"
+									th:value="${not #strings.isEmpty(attachDto.oriname)} ? ${attachDto.oriname} : '첨부파일' + ${status.index+1}"
+									placeholder="첨부파일" readonly="readonly">
+							</div>
+						</div>
+
+
+						<div class="btn">
+							<div th:if="${#strings.isEmpty(vocFormDto.num)}"
+								style="text-align: center">
+								<button th:formaction="@{/voc/new}" type="submit"
+									class="btn-submit">등록</button>
+							</div>
+
+							<div th:unless="${#strings.isEmpty(vocFormDto.num)}"
+								style="text-align: center">
+								<button th:formaction="@{'/voc/update/' + ${vocFormDto.num} }"
+									type="submit" class="btn-submit">수정</button>
+							</div>
+						</div>
+
+
+						<input type="hidden" th:name="${_csrf.parameterName}"
+							th:value="${_csrf.token}">
+
+
+					</form>
+				</div>
+			</section>
 		</div>
 	</div>
-
-
-		<input type="hidden" th:name="${_csrf.parameterName}"
-			th:value="${_csrf.token}">
-
-
-	</form>
-	</div>
-</section>
-</div>
-</div>
 
 </body>
 </html>

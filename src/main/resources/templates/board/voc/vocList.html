@@ -29,10 +29,10 @@
 </head>
 
 <div layout:fragment="content">
-
+<div>
 <section class="vocList">
 	<div class="vocList-title">
-        <h3>VOC</h3>
+        <h3>VOC 고객의 소리</h3>
     </div>
     
 	<div class="vocList-container">
@@ -49,11 +49,11 @@
 			
 			<tbody th:align="center">
 				<tr th:each="voc:${list}">
-					<td th:text="${voc.num}"></td>
-					<td id="voc-name" ><a th:text="${voc.name}" th:href="@{/voc/detail/{num}(num=${voc.num})}"></a></td>
-					<td th:text="${voc.createdBy}"></td>
-					<td th:text="${#temporals.format(voc.regTime, 'yyyy-MM-dd')}"></td>
-					<td th:text="${voc.cnt}"></td>
+					<td class="vocList-num" th:text="${voc.num}"></td>
+					<td class="vocList-name" id="voc-name" ><a th:text="${voc.name}" th:href="@{/voc/detail/{num}(num=${voc.num})}"></a></td>
+					<td class="vocList-writer" th:text="${voc.createdBy}"></td>
+					<td class="vocList-date" th:text="${#temporals.format(voc.regTime, 'yyyy-MM-dd')}"></td>
+					<td class="vocList-cnt" th:text="${voc.cnt}"></td>
 				</tr>
 			</tbody>
 		</table>
@@ -96,6 +96,7 @@
 
 </div>
 </section>
+</div>
 </html>
 
 

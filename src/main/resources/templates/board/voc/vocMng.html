@@ -37,12 +37,14 @@ select {
 
 <meta charset="UTF-8">
 
-
+<head>
+<link th:href="@{/css/vocForm.css}" rel="stylesheet">
+</head>
 
 <div layout:fragment="content">
 
-	<form th:action="@{'/voc/manage/'+ ${items.number}}" role="form"
-		method="get" th:object="${items}">
+	<form th:action="@{'/voc/manage/'+ ${checks.number}}" role="form"
+		method="get" th:object="${checks}">
 		<table class="table">
 			<thead th:align="center">
 				<tr>
@@ -54,7 +56,7 @@ select {
 			</thead>
 
 			<tbody th:align="center">
-				<tr th:each="voc, status:${items.getContent()}">
+				<tr th:each="voc, status:${checks.getContent()}">
 					<td th:text="${voc.num}"></td>
 					<td><a th:href="@{/voc/detail/{num}(num=${voc.num})}"
 						th:text="${voc.name}"></a></td>
@@ -68,22 +70,22 @@ select {
 
 
 		<div
-			th:with="start=${(items.number/maxPage)*maxPage + 1}, end=(${(items.totalPages == 0) ? 1 : (start + (maxPage - 1) < items.totalPages ? start + 
-(maxPage - 1) : items.totalPages)})">
+			th:with="start=${(checks.number/maxPage)*maxPage + 1}, end=(${(checks.totalPages == 0) ? 1 : (start + (maxPage - 1) < checks.totalPages ? start + 
+(maxPage - 1) : checks.totalPages)})">
 			<ul class="pagination justify-content-center">
-				<li class="page-item" th:classappend="${items.first}?'disabled'">
-					<a th:onclick="'javascript:page(' + ${items.number - 1} + ')'"
+				<li class="page-item" th:classappend="${checks.first}?'disabled'">
+					<a th:onclick="'javascript:page(' + ${checks.number - 1} + ')'"
 					aria-label='Previous' class="page-link"> <span
 						aria-hidden='true'>Previous</span>
 				</a>
 				</li>
 				<li class="page-item"
 					th:each="page: ${#numbers.sequence(start, end)}"
-					th:classappend="${items.number eq page-1}?'active':''"><a
+					th:classappend="${checks.number eq page-1}?'active':''"><a
 					th:onclick="'javascript:page(' + ${page - 1} + ')'"
 					th:inline="text" class="page-link">[[${page}]]</a></li>
-				<li class="page-item" th:classappend="${items.last}?'disabled'">
-					<a th:onclick="'javascript:page(' + ${items.number + 1} + ')'"
+				<li class="page-item" th:classappend="${checks.last}?'disabled'">
+					<a th:onclick="'javascript:page(' + ${checks.number + 1} + ')'"
 					aria-label='Next' class="page-link"> <span aria-hidden='true'>Next</span>
 				</a>
 				</li>
