@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layouts/layout1}">
+
+<th:block layout:fragment="script">
+	<script th:inline="javascript">
+		$(document).ready(function(){
+			$("#succSubmit").on("click", function(){
+				if(confirm('글을 삭제하시겠습니까?')){
+					alert("글을 삭제하였습니다.");	
+				} else {
+					return false;
+				}
+			});
+		});
+	</script>
+
+</th:block>
+
+
+<!-- 사용자 CSS 추가 -->
+<th:block layout:fragment="css">
+	<style>
+.fieldError {
+	color: #bd2130;
+}
+.layout {
+	width: 1300px;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+.list{
+	float: right;
+}
+.btn{
+	float: left;
+}
+</style>
+</th:block>
+
+<meta charset="UTF-8">
+<title>글 상세보기</title>
+
+
+
+
+<div layout:fragment="content">
+
+	<input type="hidden" id="num" th:value="${voc.num}">
+	<div class="layout">
+	<h1 th:align="center">게시글 상세</h1>
+	<input type="hidden" th:value="${voc.num}" name = "parentNo">
+		<table class="table" th:align="center">
+			<tr th:align="center">
+				<td width="80" th:text="제목"></td>
+				<td th:text="${voc.name}">제목</td>
+			</tr>
+			<tr th:align="center">
+				<td th:text="작성자"></td>
+				<td th:text="${voc.createdBy}"></td>
+			</tr>
+			<tr th:align="center">
+				<td th:text="내용"></td>
+				<td><textarea disabled="disabled" rows="10" cols="130" th:text="${voc.content}"></textarea></td>
+			</tr>
+			<tr th:align="center">
+				<td th:text="등록일"></td>
+				<!-- <td th:text="${voc.regTime}"></td> -->
+				<td th:text="${#temporals.format(voc.regTime, 'yyyy-MM-dd')}"></td>
+			</tr>
+			<tr th:align="center">
+				<td th:text="조회수"></td>
+				<td th:text="${voc.cnt}"></td>
+			</tr>	
+		</table>
+		
+		<div th:each="attach : ${voc.attachDtoList}" class="text-center">
+			<!-- <img th:if="${not #strings.isEmpty(attach.url)}"
+				th:src="${attach.url}" class="rounded mgb-15" width="800"> -->
+			<div><a th:href="@{/download/{num}(num=${attach.num})}" th:text="${attach.oriname}"></a></div>
+		</div>
+
+		<div style="text-align: center">
+			<a th:href="@{/voc/reply/{num}(num=${voc.num})}"
+				class="voc-reply" id="btn">답글</a>
+		</div>
+
+		<div style="text-align: center">
+			<a th:href="@{/voc/update/{num}(num=${voc.num})}"
+				class="voc-update" id="btn">수정</a>
+		</div>
+
+		<div style="text-align: center">
+			<a th:href="@{/voc/delete/{num}(num=${voc.num})}"
+				class="voc-delete" id="succSubmit">삭제</a>
+		</div>
+		
+		<div class="list">
+		<div style="text-align: center">
+			<a th:href="@{/voc/list/}" class="btn btn-primary" id="btn">목록</a>
+		</div>
+		</div>
+
+		<input type="hidden" th:name="${_csrf.parameterName}"
+			th:value="${_csrf.token}">
+	</div>
+
+
+</div>
+</html>
+
+
+
+
+
+
+

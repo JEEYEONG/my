@@ -1,0 +1,228 @@
+.fieldError {
+	color: #bd2130;
+}
+
+/*--------- default setting ---------*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/* outline: silver solid 1px; */
+}
+
+body {
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	color: black;
+	letter-spacing: 0.1px;
+	word-break: keep-all;
+	padding: 50px 5%;
+	margin: 0 auto;
+}
+
+h4 {
+	font-size: 1.3rem;
+	line-height: 2rem;
+	text-align: center;
+}
+
+h5 {
+	font-size: 0.95rem;
+	line-height: 1.5rem;
+	font-weight: 400;
+}
+
+button {
+	display: inline-block;
+	height: 50px;
+	font-size: 1rem;
+	font-weight: bold;
+	background: none;
+	border-radius: 5px;
+	border: 1px solid #aaa;
+	transition: 0.4s;
+	cursor: pointer;
+}
+
+button:hover {
+	background: #222;
+	color: #fff;
+}
+
+input::placeholder, textarea::placeholder {
+	color: #888;
+}
+
+li {
+	list-style: none;
+}
+
+/*--------- common class setting ---------*/
+article {
+	margin: 200px 0;
+} /* 안써 */
+
+.vocForm-contents {
+	border-radius: 10px;
+	border: 1px solid #999;
+	padding: 50px 5%;
+}
+
+.vocForm-inner {
+	padding-top: 30px;
+}
+
+.vocForm-txt {
+	padding-top: 20px;
+}
+
+/* .bold {
+	display: inline-block;
+	font-weight: bold;
+} */
+
+.gray {
+	color: #aaa;
+}
+
+.red {
+	color: #e6002d;
+}
+
+.sans {
+	font-family: 'Noto Sans KR', sans-serif;
+	text-align: left;
+	padding: 10px 0;
+	border-bottom: 2px solid #666;
+}
+
+img {
+	width: 100%;
+	vertical-align: top;
+}
+
+input, select {
+	height: 40px;
+	font-size: 1rem;
+	padding-left: 7px;
+}
+
+select, textarea {
+	border: 1px solid #bbb;
+	border-radius: 5px;
+	width: 100%;
+}
+
+textarea {
+	height: 200px;
+	padding: 10px 0 0 7px;
+	resize: none;
+	font-size: 1rem;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+input[type=checkbox] {
+	height: auto;
+	transform: scale(1.5);
+	margin: 0 10px;
+	vertical-align: middle;
+}
+
+/*--------- Board ---------*/
+/* 아래로 대체
+.txt input[name=title] {
+  width:100%;
+  margin-bottom: 20px;
+  border: 0;
+  border-bottom: 1px solid #bbb;
+}
+*/
+
+/* .filebox label {
+    display: inline-block;
+    padding: 10px 20px;
+    vertical-align: middle;
+    cursor: pointer;
+    height: 40px;
+    margin-left: 10px;
+} */
+.file{
+	padding-left: 10px;
+	padding-top: 20px; 
+}
+
+.vocForm-filebox input[type="file"] {
+	position: absolute;
+	width: 0;
+	height: 0;
+	padding: 0;
+	overflow: hidden;
+	border: 0;
+}
+
+.vocForm-name-input {
+	width: 100%;
+	margin-bottom: 20px;
+	border: 0;
+	border-bottom: 1px solid #bbb;
+}
+
+.btn-upload {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	margin: 10px 10px;
+	padding-top: 5px; width : 40px;
+	height: 40px;
+	background: #eee;
+	color: #aaa;
+	font-size: 2rem;
+	border: 0;
+	border-radius: 5px;
+	font-weight: 500;
+	cursor: pointer;
+	/* display: flex; */
+	align-items: center;
+	justify-content: center;
+	transition: 0.2s;
+	text-align: center;
+	width: 40px;
+}
+
+
+
+/* .custom-file-input {
+	display: none;
+} */
+
+.custom-file-label {
+	vertical-align: middle;
+	width: 94%;
+	border: 0;
+	border-radius: 5px;
+}
+
+/* .btn {
+  display: flex;
+  justify-content: space-between;
+} */
+
+/* .file{
+	float: left;
+	
+} */
+.btn-submit {
+	width : 150px;
+	border: 0;
+	margin-top: 20px;
+	transition: 0.5s;
+	background: #666;
+	color: white;
+	width: 150px;
+}
+
+.btn-submit:hover {
+	background: #111;
+	color: white;
+}

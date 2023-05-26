@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layouts/layout1}">
+
+<th:block layout:fragment="css">
+
+<style>
+	
+.tbl_type,.tbl_type th,.tbl_type td{border:0}
+.tbl_type a{color:#383838;text-decoration:none}
+.tbl_type{width:100%;border-bottom:1px solid #999;color:#666;font-size:12px;table-layout:fixed}
+.tbl_type caption,.tbl_type .frm label{display:none}
+.tbl_type th{padding:5px 0 4px;border-top:solid 1px #999;border-bottom:solid 1px #b2b2b2;background-color:#f1f1f4;color:#333;font-weight:bold;line-height:18px;vertical-align:top}
+.tbl_type td{padding:8px 0 5px;border-bottom:solid 1px #d2d2d2;text-align:center}
+.tbl_type .frm{padding:0;text-align:center}
+.tbl_type .frm input{margin:0}
+.tbl_type .num,.tbl_type .date,.tbl_type .hit{padding:0;font-family:Tahoma;font-size:11px;line-height:normal}
+.tbl_type .title{text-align:left}
+.tbl_type .title .pic,.tbl_type .title .new{margin:0 0 2px;vertical-align:middle}
+.tbl_type tr.reply .title a{padding-left:12px;background:url(img/ic_reply.gif) 0 1px no-repeat}
+.tbl_type tr.reply td a.comment{padding:0;background:none;color:#f00;font-size:12px;font-weight:bold}
+	
+
+</style>
+</th:block>
+
+<th:block layout:fragment="script">
+	<script th:inline="javascript">
+	<th:block layout:fragment="script">
+	<script th:inline="javascript">
+		$(document).ready(function(){
+			var errorMessage = [[${errorMessage}]];
+			if(errorMessage != null){
+				alert(errorMessage);
+			}
+			bindDomEvent();
+		});
+		
+		function bindDomEvent(){
+			$(".custom-file-input").on("change", function(){
+				var fileName = $(this).val().split("\\").pop(); //이미지파일명
+				var fileExt = fileName.substring(fileName.lastIndexOf(".")+1); //확장자추출
+				fileExt = fileExt.toLowerCase(); //확장자 소문자로 통일해서 비교하려고
+				
+				if(fileExt != "jpg" && fileExt != "jpeg" && fileExt != "gif" && fileExt != "png" && fileExt != "bmp"){
+					alert("이미지 파일만 등록이 가능합니다."); //파일첨부 시 이미지 파일인지 검사한다.
+					$(this).val("");
+					return;
+					} 
+				$(this).siblings(".custom-file-label").html(fileName); //라벨 태그 안의 내용을 jquery의 .html()을 이용해 파일명 입력
+			});
+		}
+	</script>
+</th:block>
+
+<div layout:fragment="content">
+
+	<!-- UI Object -->
+	<table cellspacing="0" border="1" summary="게시판의 글제목 리스트"
+		class="tbl_type">
+		<caption>게시판 리스트</caption>
+		<colgroup>
+			<col width="30">
+			<col width="80">
+			<col>
+			<col width="115">
+			<col width="85">
+			<col width="60">
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col">&nbsp;</th>
+				<th scope="col">No</th>
+				<th scope="col">제목</th>
+				<th scope="col">글쓴이</th>
+				<th scope="col">날짜</th>
+				<th scope="col">조회수</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td class="frm"><input type="checkbox" name="" id="chk_sel5"
+					value=""><label for="chk_sel5">선택</label></td>
+				<td class="num">9</td>
+				<td class="title"><a href="#">블로그 개편 작업 일정 1</a></td>
+				<td><a href="#">UIT랩</a></td>
+				<td class="date">2008/02/14</td>
+				<td class="hit">12345</td>
+			</tr>
+			<tr>
+				<td class="frm"><input type="checkbox" name="" id="chk_sel6"
+					value=""><label for="chk_sel6">선택</label></td>
+				<td class="num">8</td>
+				<td class="title"><a href="#">블로그 개편 작업 일정 1</a></td>
+				<td><a href="#">UIT랩</a></td>
+				<td class="date">2008/02/14</td>
+				<td class="hit">12345</td>
+			</tr>
+			<tr>
+				<td class="frm"><input type="checkbox" name="" id="chk_sel7"
+					value=""><label for="chk_sel7">선택</label></td>
+				<td class="num">7</td>
+				<td class="title"><a href="#">블로그 개편 작업 일정 1</a></td>
+				<td><a href="#">UIT랩</a></td>
+				<td class="date">2008/02/14</td>
+				<td class="hit">12345</td>
+			</tr>
+			<tr>
+				<td class="frm"><input type="checkbox" name="" id="chk_sel8"
+					value=""><label for="chk_sel8">선택</label></td>
+				<td class="num">6</td>
+				<td class="title"><a href="#">블로그 개편 작업 일정 1</a></td>
+				<td><a href="#">UIT랩</a></td>
+				<td class="date">2008/02/14</td>
+				<td class="hit">12345</td>
+			</tr>
+			<tr>
+				<td class="frm"><input type="checkbox" name="" id="chk_sel9"
+					value=""><label for="chk_sel9">선택</label></td>
+				<td class="num">5</td>
+				<td class="title"><a href="#">블로그 개편 작업 일정 1</a></td>
+				<td><a href="#">UIT랩</a></td>
+				<td class="date">2008/02/14</td>
+				<td class="hit">12345</td>
+			</tr>
+			<tr>
+				<td class="frm"><input type="checkbox" name="" id="chk_sel10"
+					value=""><label for="chk_sel10">선택</label></td>
+				<td class="num">4</td>
+				<td class="title"><a href="#">블로그 개편 작업 일정 1</a></td>
+				<td><a href="#">UIT랩</a></td>
+				<td class="date">2008/02/14</td>
+				<td class="hit">12345</td>
+			</tr>
+		</tbody>
+	</table>
+
+</div>
